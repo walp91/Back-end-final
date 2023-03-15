@@ -8,11 +8,14 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.repository.query.FluentQuery;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 import java.util.function.Function;
 
+
+@Service
 public class MarcaService implements MarcaRepository {
 
 
@@ -20,7 +23,7 @@ public class MarcaService implements MarcaRepository {
     @Autowired
     private MarcaRepository marcaRepository;
 
-    public List<Marca> findAll (){
+    public static List<Marca> findAll(){
         return marcaRepository.findAll();
     }
 

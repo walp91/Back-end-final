@@ -16,8 +16,7 @@ public class TipoDocumentoController {
     private TipoDocumentoService tipoDocumentoService;
 
     @GetMapping("/all")
-    public List<TipoDocumento> findAll (){
-        return tipoDocumentoService.findAll();
+    public List<TipoDocumento> findAll (){return tipoDocumentoService.findAll();
     }
 
 
